@@ -34,7 +34,8 @@ ALLOWED_HOSTS = [
     "127.0.0.1",
 ]
 CSRF_TRUSTED_ORIGINS = [
-    "https://phph5015-8000.theianext-1-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai/",
+    "https://phph5015-8000.theianext-1-labs-prod-misc-tools-us-east-0"
+    ".proxy.cognitiveclass.ai/",
     "https://*.proxy.cognitiveclass.ai",
 ]
 
@@ -100,16 +101,20 @@ DATABASES = {
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",
+        "NAME": "django.contrib.auth.password_validation"
+        ".UserAttributeSimilarityValidator",
     },
     {
-        "NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",
+        "NAME": "django.contrib.auth.password_validation"
+        ".MinimumLengthValidator",
     },
     {
-        "NAME": "django.contrib.auth.password_validation.CommonPasswordValidator",
+        "NAME": "django.contrib.auth.password_validation"
+        ".CommonPasswordValidator",
     },
     {
-        "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",
+        "NAME": "django.contrib.auth.password_validation"
+        ".NumericPasswordValidator",
     },
 ]
 
