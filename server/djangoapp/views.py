@@ -146,7 +146,7 @@ def get_dealer_details(request, dealer_id):
 # Create a `add_review` view to submit a review
 def add_review(request):
     if(request.user.is_anonymous == False):
-        data = request.body
+        data = json.loads(request.body)
         try:
             post_review_response = post_review(data)
             print(f"{post_review_response=}")
